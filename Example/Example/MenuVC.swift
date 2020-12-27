@@ -38,7 +38,12 @@ class MenuVC: UIViewController {
     
     func watchAction() {
                 
-        easy wa
+        easy?.watchAction({ (a : String?) in
+            
+        }, error: { ( a: String?, b : String?, setError : (( _ d : String?, _ e : UIColor?, _ k : UnsafeMutablePointer<ObjCBool>? ) -> Void)?) in
+            
+        })
+
         
     }
 
