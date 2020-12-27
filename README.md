@@ -121,30 +121,17 @@ Required software and how to install them.
 
 7. Initialize iEasy Framework
 ```sh
-    CGRect rect = CGRectMake( 0.0, 0.0,  159.0,  300.0 );
-
-    self.easy = [[iEasy alloc] initWithFrame:[UIColor redColor]
-                                      bgText:[UIColor whiteColor]
-                                      fgText:[UIColor blackColor]
-                                    bgButton:[UIColor blackColor]
-                                    fgButton:[UIColor whiteColor]];
-
-    [self.view addSubview:self.easy];
-
+    easy = iEasy(frame: CGRect.zero)
 ```
 
 8. Monitor iEasy activities
 ```sh
-- (void) setUp {
-    [self.easy setBackgroundColor:[UIColor blackColor]];
-    
-    [self.easy addImage:@"image"  photo:[UIImage imageNamed:@"japan2"] x:0.0 y:0.0 w:1.0 h:1.0 ];
+        easy?.addImage("Japan", photo: UIImage(named: "japan2"), x: 0.0, y: 0.0, w: 1.0, h: 1.0 )
 
-    [self.easy addText:@"Email" x:0.1 y:0.3 w:0.8 h:0.08 photo:[UIImage imageNamed:@"email"] ];
-   
-    [self.easy addButton:@"Submit" x:0.2 y:0.4 w:0.6 h:0.05];
+        easy?.addText("Full Name", x: 0.1, y: 0.3, w: 0.8, h: 0.08, photo: UIImage(named: "person") )
+        easy?.addText("Password", x: 0.1, y: 0.4, w: 0.8, h: 0.08, photo:  UIImage(named: "key" ) )
 
-}
+        easy?.refresh()
 ```
 
 9. Monitor iEasy activities in swift
