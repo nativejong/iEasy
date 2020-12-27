@@ -22,9 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)initWithFrame:(CGRect)frame name:(NSString*)n photo:(UIImage*)p;
 
 
-- (void)watchAction:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *errorMsg, UIColor *c, BOOL *t) ))ex;
+- (void)watchAction:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *errorMsg, UIColor *c, Boolean t) ))ex;
 
-@property (copy, nonatomic) void (^errorCB)(NSString *nm, NSString *s, void(^setError)(NSString *errorMsg, UIColor *c, BOOL *t) );
+@property (copy, nonatomic) void (^errorCB)(NSString *nm, NSString *s, void(^setError)(NSString *errorMsg, UIColor *c, Boolean t) );
 
 @end
 

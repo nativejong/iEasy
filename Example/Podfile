@@ -6,6 +6,7 @@ target 'Example' do
   use_frameworks!
   
     pod 'iEasy', :git => 'https://github.com/nativejong/iEasy.git'
+    #pod 'iEasy', :path => '/Users/jblaine/wow/iEasy/Universe/iEasy.podspec'
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|

@@ -138,10 +138,14 @@ Required software and how to install them.
 9. Monitor iEasy activities in swift
 ```sh
     
-    easy?.watchAction({ (a : String?) in
-            
-    }, error: { ( a: String?, b : String?, setError : (( _ d : String?, _ e : UIColor?, _ k : UnsafeMutablePointer<ObjCBool>? ) -> Void)?) in        
-    })
+  easy?.watch({ (a : String?) in
+      print( a )
+  }, image: { ( a : String?) in
+      print( a )
+  }, error: { ( a: String?, b : String?, setError : (( _ d : String?, _ e : UIColor?, _ k : Bool ) -> Void)?) in
+      
+  })
+
 
 ```
 

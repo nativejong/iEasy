@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "CNotify.h"
-//#import "TextPanel.h"
 #import "CTextView.h"
 #import "CText.h"
 
@@ -51,12 +50,12 @@ FOUNDATION_EXPORT const unsigned char iEasyVersionString[];
 
 - (void) addButton:(NSString*)n x:(CGFloat)xp y:(CGFloat)yp w:(CGFloat)wp h:(CGFloat)hp;
 
-- (void)watchAction:(void(^)(NSString *nm))lx
-error:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *s, UIColor *c, BOOL *t) ))ex;
+-(void)watch:(void(^)(NSString *nm))lx image:(void(^)(NSString *nm))ix
+error:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *s, UIColor *c, Boolean t) ))ex;
 
-
-@property (copy, nonatomic) void (^actionCB)(NSString *nm);
-@property (copy, nonatomic) void (^errorCB)(NSString *nm, NSString *s, void(^setError)(NSString *msg, UIColor *c, BOOL *t) );
+@property (copy, nonatomic) void (^buttonCB)(NSString *nm);
+@property (copy, nonatomic) void (^imageCB)(NSString *nm);
+@property (copy, nonatomic) void (^errorCB)(NSString *nm, NSString *s, void(^setError)(NSString *msg, UIColor *c, Boolean) );
 
 - (void) addBGColor:(NSString*)n color:(UIColor*)c;
 - (void) addFGColor:(NSString*)n color:(UIColor*)c;
