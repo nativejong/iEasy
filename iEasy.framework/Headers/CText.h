@@ -1,8 +1,8 @@
 //
-//  TextPanel.h
-//  TestEasy
+//  CText.h
+//  iEasy
 //
-//  Created by John Blaine on 9/23/20.
+//  Created by John Blaine on 10/6/20.
 //  Copyright © 2020 John Blaine. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
-@interface TextPanel : UIView<UITextFieldDelegate>
+@interface CText : UIView<UITextFieldDelegate>
 
 @property (nonatomic, retain) UITextField *title;
 @property (nonatomic, retain) UITextField *txt;
@@ -23,8 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)initWithFrame:(CGRect)frame name:(NSString*)n photo:(UIImage*)p;
 
 
-- (void)watchAction:(NSInteger)n text:(NSObject*(^)(NSString *nm, NSString *s))tx;
-@property (copy, nonatomic) NSObject* (^textCB)(NSString *nm, NSString *s);
+- (void)watchAction:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *errorMsg, UIColor *c, BOOL *t) ))ex;
+
+@property (copy, nonatomic) void (^errorCB)(NSString *nm, NSString *s, void(^setError)(NSString *errorMsg, UIColor *c, BOOL *t) );
 
 @end
 

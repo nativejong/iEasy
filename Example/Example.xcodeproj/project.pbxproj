@@ -32,7 +32,7 @@
 		9E3991C42520201C00C1CC95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E3991C62520201C00C1CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3991CC2520204100C1CC95 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		9E3991D02520206500C1CC95 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		9E3991D02520206500C1CC95 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ECB08DC2529ED2400CDDDD3 /* LogInVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInVC.h; sourceTree = "<group>"; };
 		9ECB08DD2529ED2400CDDDD3 /* LogInVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInVC.m; sourceTree = "<group>"; };
 		9ECB08DF2529ED3E00CDDDD3 /* LogInVC+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogInVC+Model.h"; sourceTree = "<group>"; };

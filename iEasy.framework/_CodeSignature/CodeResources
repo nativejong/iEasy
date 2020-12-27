@@ -6,11 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		A0/xG+4oehlgYEPraZg4F9hLDlI=
+		ogpLMD1ppyL5l7PGvEWy+0RD+As=
 		</data>
 		<key>Headers/CNotify.h</key>
 		<data>
 		/3t2+gYwCZiCsrU9P/1hsBTq3tU=
+		</data>
+		<key>Headers/CText.h</key>
+		<data>
+		1+zp2J9k89ZJyCICwExjOjm/6bY=
 		</data>
 		<key>Headers/CTextView.h</key>
 		<data>
@@ -18,11 +22,11 @@
 		</data>
 		<key>Headers/iEasy.h</key>
 		<data>
-		wvYE7nqx7HlMXCg/TKPAdgSkARY=
+		dNz6BLUOV8wnA5N1UFi7ydNIl/c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mGGHqQmUKxEhU+A8wX3agn46vsc=
+		hrQmio5Qk+jQ9VDr4hdr/ZI37Zg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LEfz3R/o3+ML00U48is7bvzc1cSuVg32/rhqCexfe7A=
+			rMfZDBiX352XarD76hSz7hSo9EcoVO3dCvjttwNWXKs=
 			</data>
 		</dict>
 		<key>Headers/CNotify.h</key>
@@ -43,6 +47,13 @@
 			<key>hash2</key>
 			<data>
 			yQgjUdorGZmb6AXE94TVWekFsuz0D/utwfKfeuXx3zA=
+			</data>
+		</dict>
+		<key>Headers/CText.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54bc//+UcoHQtNR5kewwkOwN3G2xZlWbVco3Jy0zz0c=
 			</data>
 		</dict>
 		<key>Headers/CTextView.h</key>
@@ -56,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vB9YapSZev694Ke05Q7m5CBnBB3ArYGZy9YrLf6Erng=
+			gaUhETq9PjxXo8gDqXAHy3imAr/OGXigqWv1V3jhpNg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

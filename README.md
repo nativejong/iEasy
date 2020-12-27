@@ -27,13 +27,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="/images/login.png" alt="My cool logo" width="220" height="120"/>
+    <img src="/images/ieasy.png" alt="My cool logo" width="200" height="400"/>
   </a>
 
-  <h3 align="center">iLogin</h3>
+  <h3 align="center">iEasy</h3>
 
   <p align="center">
-     iLogin is a quick and easy way to add a Login/Signup UX to your iOS app.
+     iEasy is a quick and easy way to add a Login/Signup UX to your iOS app.
   </p>
 </p>
 
@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-iLogin is a quick and easy way to add a Login/Signup UX to your iOS app.
+iEasy is a quick and easy way to add a Login/Signup UX to your iOS app.
 <table  border="0" >
   <tr>
     <td>Login</td>
@@ -90,7 +90,7 @@ Required software and how to install them.
 
 1. Add to Podfile
 ```sh
-    pod 'BPod', :git => 'https://github.com/jalajoninc/BPod.git'
+    pod 'iEasy', :git => 'https://github.com/nativejong/iEasy.git'
 ```
 2. Install this pod
 ```sh
@@ -104,42 +104,50 @@ Required software and how to install them.
 
 4. Import the library (header's file)
 ```sh
-    @import iLogin;
+    @import iEasy;
 ```
 
 5. Declare the library (header's file)
 ```sh
-    @property (nonatomic, strong) iLogin *myFrame;
+    @property (nonatomic, strong) iEasy *myFrame;
 ```
 
-6. Initialize iLogin Framework
+6. Initialize iEasy Framework
 ```sh
     CGRect rect = CGRectMake( 0.0, 0.0,  159.0,  300.0 );
-    self.myFrame = [[iLogin alloc] initWithFrame:rect];
+    self.myFrame = [[iEasy alloc] initWithFrame:rect];
     [self.view addSubview:self.myFrame];
 ```
 
-7. Monitor iLogin activities
+7. Initialize iEasy Framework
 ```sh
-    [self.login watchAction:1 login:^BOOL(NSString *usr, NSString *pwd) {
-        NSLog( @"forget : %@ %@", usr, pwd );
-        return( false );
-    } reg:^BOOL(NSString *name, NSString *phone) {
-        NSLog( @"forget : %@ %@", name, phone );
-        return( false );
-    } forget:^BOOL(NSString *phone) {
-        NSLog( @"forget : %@", phone );
-        return( false );
-    } createPwd:^BOOL(NSString *pwd) {
-        NSLog( @"forget : %@", pwd );
-        return( false );
-    } verify:^BOOL(NSString *code) {
-        NSLog( @"forget : %@", code );
-        return( false );
-    }];
+    CGRect rect = CGRectMake( 0.0, 0.0,  159.0,  300.0 );
+
+    self.easy = [[iEasy alloc] initWithFrame:[UIColor redColor]
+                                      bgText:[UIColor whiteColor]
+                                      fgText:[UIColor blackColor]
+                                    bgButton:[UIColor blackColor]
+                                    fgButton:[UIColor whiteColor]];
+
+    [self.view addSubview:self.easy];
+
 ```
 
-8. Monitor iLogin activities in swift
+8. Monitor iEasy activities
+```sh
+- (void) setUp {
+    [self.easy setBackgroundColor:[UIColor blackColor]];
+    
+    [self.easy addImage:@"image"  photo:[UIImage imageNamed:@"japan2"] x:0.0 y:0.0 w:1.0 h:1.0 ];
+
+    [self.easy addText:@"Email" x:0.1 y:0.3 w:0.8 h:0.08 photo:[UIImage imageNamed:@"email"] ];
+   
+    [self.easy addButton:@"Submit" x:0.2 y:0.4 w:0.6 h:0.05];
+
+}
+```
+
+9. Monitor iEasy activities in swift
 ```sh
         login?.watchAction(1, login: { ( usr : String?, pwd : String?) -> Bool in
             return false
