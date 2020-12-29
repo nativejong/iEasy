@@ -27,7 +27,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="/images/ieasy.gif" alt="My cool logo" width="200" height="400"/>
+    <img src="/images/ieasy.gif" width="30%" height="30%"/>
   </a>
 
   <h3 align="center">iEasy</h3>
