@@ -14,8 +14,6 @@
 
 //! Project version number for iEasy.
 FOUNDATION_EXPORT double iEasyVersionNumber;
-
-//! Project version string for iEasy.
 FOUNDATION_EXPORT const unsigned char iEasyVersionString[];
 
 
@@ -42,19 +40,21 @@ FOUNDATION_EXPORT const unsigned char iEasyVersionString[];
 - (NSString*) getText:(NSString*)n;
 
 - (void) addTextView:(NSString*)n x:(CGFloat)xp y:(CGFloat)yp w:(CGFloat)wp h:(CGFloat)hp  photo:(UIImage*)p;
-
-
 - (void) addText:(NSString*)n x:(CGFloat)xp y:(CGFloat)yp w:(CGFloat)wp h:(CGFloat)hp  photo:(UIImage*)p;
 
 - (void) addImage:(NSString*)n photo:(UIImage*)p x:(CGFloat)xp y:(CGFloat)yp w:(CGFloat)wp h:(CGFloat)hp;
 
 - (void) addButton:(NSString*)n x:(CGFloat)xp y:(CGFloat)yp w:(CGFloat)wp h:(CGFloat)hp;
 
--(void)watch:(void(^)(NSString *nm))lx image:(void(^)(NSString *nm))ix
-error:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *s, UIColor *c, Boolean t) ))ex;
+- (void) addIText:(NSString*)n x:(CGFloat)xp y:(CGFloat)yp w:(CGFloat)wp h:(CGFloat)hp  photo:(UIImage*)p;
+
+
+- (void)watch:(void(^)(NSString *nm))lx image:(void(^)(NSString *nm))ix text:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *s, UIColor *c, Boolean t) ))tx
+        error:(void(^)(NSString *nm, NSString *s, void(^setError)(NSString *s, UIColor *c, Boolean t) ))ex;
 
 @property (copy, nonatomic) void (^buttonCB)(NSString *nm);
 @property (copy, nonatomic) void (^imageCB)(NSString *nm);
+@property (copy, nonatomic) void (^textCB)(NSString *nm, NSString *s, void(^setError)(NSString *msg, UIColor *c, Boolean) );
 @property (copy, nonatomic) void (^errorCB)(NSString *nm, NSString *s, void(^setError)(NSString *msg, UIColor *c, Boolean) );
 
 - (void) addBGColor:(NSString*)n color:(UIColor*)c;

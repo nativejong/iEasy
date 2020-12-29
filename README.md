@@ -142,8 +142,15 @@ Required software and how to install them.
       print( a )
   }, image: { ( a : String?) in
       print( a )
-  }, error: { ( a: String?, b : String?, setError : (( _ d : String?, _ e : UIColor?, _ k : Bool ) -> Void)?) in
+  }, text: { ( a: String?, b : String?, setError : (( _ d : String?, _ e : UIColor?, _ k : Bool ) -> Void)?) in
       
+    if ( b == "0000") {
+      setError!( "zero", UIColor.red, false )
+    } else {
+      setError!( "", UIColor.red, false )
+    }
+      
+  }, error: { ( a: String?, b : String?, setError : (( _ d : String?, _ e : UIColor?, _ k : Bool ) -> Void)?) in
   })
 
 
