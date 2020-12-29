@@ -27,7 +27,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="/images/ieasy.png" alt="My cool logo" width="200" height="400"/>
+    <img src="/images/ieasy.gif" alt="My cool logo" width="200" height="400"/>
   </a>
 
   <h3 align="center">iEasy</h3>
@@ -63,7 +63,7 @@ iEasy is a quick and easy way to add a Login/Signup UX to your iOS app.
 <table  border="0" >
   <tr>
     <td>Login</td>
-    <td><img src="/images/login.png" width=220 height=120></td>
+    <td><img src="/images/ieasy.gif" width=200 height=400></td>
   </tr>
  </table>
 
